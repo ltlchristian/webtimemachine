@@ -60,7 +60,7 @@ export default function Archive() {
   const handlePressButtonSearch = () => {
     const timestamp = dayjs(date).format('YYYYMMDDhhmmss');
     console.log("handlePressButtonSearch", url, timestamp);
-    search(url, timestamp);
+    if (url && timestamp) search(url, timestamp);
   }
 
   // WebBrowser
