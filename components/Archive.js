@@ -26,7 +26,7 @@ export default function Archive() {
     const currentDate = selectedDate;
     console.log(currentDate);
     setShow(false);
-    setDate(currentDate);
+    if(currentDate) setDate(currentDate);
   };
 
   const showMode = (currentMode) => {
